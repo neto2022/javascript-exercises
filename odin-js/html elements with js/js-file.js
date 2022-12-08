@@ -1,0 +1,30 @@
+const div1 = document.createElement('div');
+div1.setAttribute('id', 'main-div'); 
+var p1 = document.createElement("p");
+var contentp1 = document.createTextNode("Hey I\u0027m red!");
+p1.appendChild(contentp1);
+var currentdiv1 = document.getElementById("main-div");
+document.body.insertBefore(p1, currentdiv1);
+p1.style.color = 'red';
+
+const h3_1 = document.createElement("h3");
+var contentH3 = document.createTextNode("I\u0027m a blue h3!");
+h3_1.appendChild(contentH3);
+h3_1.style.color = 'blue';
+document.body.insertBefore(h3_1, currentdiv1);
+
+const div2 = document.createElement('div');
+div2.setAttribute('id', 'div');
+div2.style= `border: 2px solid black`;
+div2.style.background = `pink`;
+var div2H1 = document.createElement("h1");
+var div2p1 = document.createElement("p");
+div1.appendChild(div2);
+div2.appendChild(div2H1);
+div2.appendChild(div2p1);
+var contentdiv2p1 = document.createTextNode("ME TOO!");
+var contentdiv2H1 = document.createTextNode("I\u0027m in a div");
+div2H1.appendChild(contentdiv2H1);
+div2p1.appendChild(contentdiv2p1);
+var sencodarydiv = document.getElementById('div');
+document.body.insertBefore(div2, sencodarydiv);
